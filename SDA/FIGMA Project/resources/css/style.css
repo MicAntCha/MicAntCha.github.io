@@ -1,0 +1,182 @@
+/* RESET ALL MARGIN & PADDING */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY STYLING */
+body {
+    background: #fff; /* WHITE BACKGROUND */
+    font-family: Roboto, Arial, Helvetica, sans-serif; /* FONT INFORMATION */
+}
+
+/* HEADER STYLING */
+header {
+    position: fixed;    /* FIXED SO HEADER DOESN'T MOVE WITH SCROLL */
+    z-index: 1;         /* INCREASE Z-INDEX TO KEEP HEADER ON TOP */
+    width: 100vw;       /* WIDTH IS 100 VIEWPORT WIDTHS */
+    overflow: hidden;   /* IF ANYTHING INSIDE THE HEADER IS TOO BIG, IT WILL BE HIDDEN */
+}
+
+/* NAV BAR STYLING */
+#nav-bar {
+    background: #38ACED;    /* LIGHT BLUE BACKGROUND */
+    text-align: right;        /* KEEP ALL TEXT TO RIGHT SIDE */
+    padding: 10px;            /* PADDING INSIDE THE NAV BAR */
+}
+
+/* LIST ITEMS INSIDE THE NAV STYLING */
+#nav-items li {
+    display: inline;    /* CHANGE TO INLINE SO ITEMS WILL BE ON ONE LINE INSTEAD OF STACKE D*/ 
+    padding: 10px;      /* PADDING INSIDE EACH LIST ITEM */
+}
+
+/* ANCHORS (LINKS) INSIDE THE LIST ITEMS STYLING */
+li a {
+    text-decoration: none;  /* TO REMOVE THE DEFAULT UNDERLINE */
+    color: #FDE3E3;       /* CHANGE TEXT COLOR TO WHITE-ish */
+    font-size: 29px;        /* CHANGE SIZE OF FONT */
+    padding: 18px 17.5px 18px 17.5px;   /* PADDING INSIDE EACH ANCHOR (TOP RIGHT BOTTOM LEFT) */
+}
+
+/* FLEX CONTAINER STYLING (THIS IS THE DIV AROUND THE WELCOME SECTION) */
+.flex-container {
+    display: flex;              /* CHANGE TO FLEX SO THE ITEMS INSIDE WILL BE SIDE-BY-SIDE */
+    align-items: center;        /* ALIGN ITEMS INSIDE CONTAINER, UP-DOWN */
+    justify-content: center;    /* ALIGN ITEMS, LEFT-RIGHT */
+}
+
+/* WELCOME TEXT STYLING */
+#welcome-text {
+    /* position: relative; */
+    /*display: inline-flex;*/   /* THESE STYLE AREN'T NEEDED AFTER CHANGING .flex-container TO flex; */
+    /*float: left;*/
+    text-align: center;     /* ALIGN TEXT TO CENTER OF ITS AREA */
+    color: #38ACED;       /* LIGHT BLUE TEXT COLOR */
+    margin: 100px 50px;     /* MARGIN AROUND THE WELCOME TEXT */    
+    font-size: 2.5rem;      /* INCREASE THE FONT SIZE (2.5 x DEFAULT) */
+}
+
+/* WELCOME IMAGE STYLING */
+#main-image {
+    /*position: relative;*/
+    /*display: inline-flex;*/   /* THESE STYLE AREN'T NEEDED AFTER CHANGING .flex-container TO flex; */
+    /*float: right;*/
+    width: 40vw;            /* IMAGE WILL ALWAYS BE 40 VIEWPORT WIDTHS */
+    margin: 60px 50px;      /* MARGIN AROUND THE IMAGE */
+}
+
+/* INTRO SECTION STYLING */
+#intro {
+    width: 100%;            /* WIDTH OF SECTION IS 100%. THIS COULD ALSO BE 100vw */
+    color: #fff;          /* WHITE TEXT */  
+    padding-top: 10px;      /* PADDING INSIDE TOP OF INTRO SECTION */
+    background: url(https://source.unsplash.com/E0AHdsENmDg/); /* BACKGROUND IMAGE LINKED FROM WEBSITE */
+    background-position: center;    /* KEEP THE BACKGROUND IMAGE CENTERED */
+    background-size: cover;         /* MAKE THE BACKGROUND IMAGE COVER ALL OF THE INTRO SECTION */
+    text-align: center;             /* KEEP ALL TEXT IN INTRO SECTION CENTERED */
+}
+
+/* h2 INSIDE THE INTRO SECTION STYLING */
+#intro h2 {
+    font-weight: 300;       /* MAKE THE h2 TEXT THINNER */
+    font-size: 27px;        /* CHANGE h2 FONT SIZE */
+    margin: 20px;           /* MARGIN AROUND THE h2 */
+}
+
+/* p INSIDE THE INTRO SECTION STYLING */
+#intro p {
+    font-style: italic;     /* MAKE THE p TEXT ITALIC */
+    font-size: 18px;        /* INCREASE THE p FONT SIZE */
+    text-align: center;     /* ALIGN p TEXT TO CENTER */
+    padding: 30px;          /* PADDING INSIDE THE p */
+}
+
+/* button INSIDE THE INTRO SECTION STYLING */
+#intro .button {
+    font-weight: bold;      /* MAKE THE button TEXT BOLD */
+    font-size: 30px;        /* CHANGE button TEXT SIZE */
+    color: #0579BA;       /* COLOR OF TEXT INSIDE THE button */
+    background: #58C3BA;  /* COLOR OF THE button */
+    width: 200px;           /* button WIDTH */
+    height: 50px;           /* button HEIGHT */
+    border: none;           /* REMOVE BORDER FROM button */
+    margin: 50px 0;         /* MARGIN AROUND THE button (top-bottom left-right) */
+}
+
+/* MAIN SECTION STYLING */
+#main-section {
+    margin: 80px;           /* MARGIN AROUND MAIN SECTION */
+    font-size: 20px;        /* INCREASE TEXT SIZE */
+    line-height: 23px;      /* DECREASE LINE HEIGHT */
+}
+
+/* h3 INSIDE MAIN SECTION STYLING */
+#main-section h3 {
+    font-weight: bold;      /* MAKE TEXT BOLD */
+}
+
+/* p INSIDE MAIN SECTION STYLING */
+#main-section p {
+    padding-bottom: 50px;  /* ADD PADDING TO BOTTOM OF p */
+}
+
+/* MEMBERS SECTION STYLING */
+#members-section {
+    text-align: center;     /* KEEP TEXT INSIDE MEMBERS SECTION CENTERED */
+    background: #CEE6F4;  /* LIGHT BLUE BACKGROUND */   
+    padding: 40px;          /* PADDING INSIDE MEMBERS SECTION */ 
+}
+
+/* ANCHORS (LINKS) INSIDE MEMBERS SECTION STYLING */
+#members-section a {
+    padding: 20px;      /* PADDING INSIDE THE a */
+    color: black;     /* CHANGE THE TEXT TO BLACK */
+}
+
+/* MAIN TABLE STYLING */
+#main-table {
+    width: 100%;        /* TABLE TAKES FULL WIDTH OF ITS CONTAINER */
+    border-collapse: collapse;  /* FORCE TABLE TO HAVE A SINGLE BORDER ANYWHERE TWO ARE CREATED. THIS IS IMPORTANT FOR THE BORDER AROUND THE TABLE HEAD */
+    border: 2px solid black;  /* MAKE A BORDER AROUND THE ENTIRE TABLE */
+}
+
+/* TABLE HEAD STYLING */
+.table-head {
+    border-bottom: 2px solid black; /* MAKE A BORDER AROUND THE TABLE HEAD. THIS IS WHY BORDER-COLLAPSE WAS NEEDED ABOVE */
+}
+
+/* TH ITEMS & TD ITEMS STYLING */
+th, td {
+    text-align: left;   /* ALIGN ALL TEXT INSIDE TH OR TD ITEMS TO LEFT */
+    padding: 10px;      /* PADDING INSIDE EACH TH OR TD */
+}
+
+/* LOGOS SECTION STYLING */
+#logos {
+    width: 100vw;           /* EQUAL TO 100% */
+    display: flex;          /* SET display TO flex SO ALL IMAGES INSIDE WILL BE DISPLAYED SIDE-BY-SIDE */
+    align-items: center;    /* ALIGN THE CENTER OF EACH ITEM INSIDE LOGOS SECTION TOGETHER. THIS WORKS UP-DOWN */
+    justify-content: center;    /* ALIGN ITEMS AS A GROUP TO CENTER OF LOGOS SECTION. THIS WORKS LEFT-RIGHT */
+}
+
+/* IMAGES INSIDE OF SPANS INSIDE OF THE LOGOS SECTION STYLING */
+#logos span img {
+    width: 100%;        /* IMAGES WILL TAKE 100% WIDTH OF THEIR CONTAINERS. THIS ALLOWS IMAGES TO AUTOMATICALLY RESIZE TO DIFFERENT SCREEN SIZES */
+    height: auto;       /* THIS ALLOWS THE HEIGHT TO ALSO AUTOMATICALLY RESIZE */
+    margin: auto;       /* THIS ALLOWS THE MARGINS TO RESIZE WITH THE WIDTH AND HEIGHT TO KEEP IMAGES CENTERED */
+}
+
+/* FOOTER STYLING */
+footer {
+    text-align: center;     /* KEEP TEXT IN CENTER */
+    background: #CEE6F4;  /* LIGHT BLUE BACKGROUND */  
+    padding: 10px;          /* PADDING INSIDE THE FOOTER */
+}
+
+/* MEDIA QUERY FOR SCREENS UNDER 600 PIXELS */
+@media (max-width: 600px) {
+    #main-image {
+        display: none;      /* DON'T DISPLAY THE MAIN IMAGE ON SMALLER SCREENS */
+    }
+}
