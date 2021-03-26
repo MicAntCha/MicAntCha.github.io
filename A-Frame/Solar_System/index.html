@@ -1,0 +1,240 @@
+<!-- Link code: https://gist.github.com/60c886e70be73367b79aa1d9082dc85f -->
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-entity id="camera" camera look-controls wasd-controls="acceleration: 65"></a-entity>
+    <a-scene>
+      <!-- Asset management system -->
+      <a-assets>
+        <img 
+          id="space"
+          src="space.jpg">
+        <img 
+          id="sun" 
+          src="sun.jpg">
+        <img 
+          id="mercury"
+          src="mercury.jpg">
+        <img 
+          id="venus"
+          src="venus.jpg">
+        <img
+          id="earth"
+          src="earth.jpg">
+        <img 
+          id="mars"
+          src="mars.jpg">
+        <img 
+          id="jupiter"
+          src="jupiter.jpg">
+        <img 
+          id="saturn"
+          src="saturn.jpg">
+        <img 
+          id="uranus"
+          src="uranus.jpg">
+        <img 
+          id="neptune"
+          src="neptune.jpg"> 
+        <img 
+          id="pluto"
+          src="mercury.jpg"> 
+      </a-assets>
+
+      <a-sky
+        src="#space"></a-sky>
+
+      <a-sphere 
+        src="#sun"
+        position="-12 2 -18" 
+        radius="3"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Mercury -->
+      <a-sphere
+        src="#mercury"
+        position="-7 2 -18"
+        radius=".25"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Venus -->
+      <a-sphere 
+        src="#venus"
+        position="-5 2 -18" 
+        radius=".5"
+        animation="property: object3D.rotation.y;
+          to: -360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Earth -->
+      <a-sphere 
+        src="#earth"
+        position="-3 2 -18" 
+        radius=".5"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Mars -->
+      <a-sphere 
+        src="#mars"
+        position="-1 2 -18" 
+        radius=".25"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Jupiter -->
+      <a-sphere 
+        src="#jupiter"
+        position="1 2 -18"
+        radius="1"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+      
+      <!-- Saturn -->
+      <!-- <a-sphere 
+        src="#saturn"
+        position="4 2 -15" 
+        radius=".8"></a-sphere> -->
+
+      <!-- Uranus -->
+      <a-sphere 
+        src="#uranus"
+        position="7 2 -18"
+        radius=".75"
+        animation="property: object3D.rotation.y;
+          to: -360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+
+      <!-- Neptune -->
+      <a-sphere 
+        src="#neptune"
+        position="10 2 -18" 
+        radius=".75"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+        
+      <!-- Pluto -->
+      <a-sphere
+        src="#pluto"
+        position="12 2 -18"
+        radius=".15"
+        animation="property: object3D.rotation.y;
+          to: 360;
+          dur: 10000;
+          loop: true">
+      </a-sphere>
+     
+      <!-- Saturn has rings around it that are made of torii (singular torus) -->
+      <a-entity 
+        position="4 2 -18">
+        <a-sphere 
+          position="0 0 0" 
+          radius=".8"
+          src="#saturn"
+          animation="property: object3D.rotation.y;
+            to: 360;
+            dur: 10000;
+            loop: true">
+        </a-sphere>
+        <a-torus 
+          id="saturn-ring-1" 
+          color="#57524A" 
+          segments-tubular="50" 
+          radius="3.2" 
+          radius-tubular="0.1" 
+          rotation="90 0 0" 
+          scale=".44 .44 0.04"></a-torus>
+        <a-torus 
+          id="saturn-ring-2" 
+          color="#A29A87" 
+          segments-tubular="50" 
+          radius="2.4" 
+          radius-tubular="0.2" 
+          rotation="90 0 0" 
+          scale=".44 .44 0.04"></a-torus>
+      </a-entity>
+    
+      <a-light 
+        type="point" 
+        intensity="2" 
+        position="-8 2 -6"></a-light>
+       
+      <a-text 
+        value="The Sun"
+        color="#FFFF00"
+        position="-13 -2 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Mercury"
+        color="#FFFF00"
+        position="-7.5 3.5 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Venus"
+        color="#FFFF00"
+        position="-5.5 0 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Earth"
+        color="#FFFF00"
+        position="-3.5 3.5 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Mars"
+        color="#FFFF00"
+        position="-1.5 0 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Jupiter"
+        color="#FFFF00"
+        position="0.25 3.5 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Saturn"
+        color="#FFFF00"
+        position="3.5 0 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Uranus"
+        color="#FFFF00"
+        position="6.5 3.5 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Neptune"
+        color="#FFFF00"
+        position="9.5 0 -18"
+        scale="1.5 1.5 1.5"></a-text>
+      <a-text 
+        value="Pluto"
+        color="#FFFF00"
+        position="11.5 3.5 -18"
+        scale="1.5 1.5 1.5"></a-text>
+    </a-scene>
+  </body>
+</html>
