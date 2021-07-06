@@ -154,8 +154,8 @@ function Vector(x, y, z) {
   
   function updateCanvasDimensions() {
     canvas.attr({
-      height: window.innerHeight - 100,
-      width: window.innerWidth
+      height: window.innerHeight - 300,
+      width: window.innerWidth - 250
     });
     canvasWidth = canvas.width();
     canvasHeight = canvas.height();
