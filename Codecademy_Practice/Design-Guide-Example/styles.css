@@ -1,0 +1,90 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 10%;
+  }
+  
+  .container {
+    border: 2px solid #a2a2a6;
+    padding: 10px;
+    margin: 10px auto;
+  }
+  
+  .color-container {
+    width: 100%;
+  }
+  
+  .color-panel {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 100px;
+  }
+  
+  .main-blue {
+    background-color: #1460A3;
+    color: #fff;
+  }
+  
+  .accent-blue {
+    background-color: #003059;
+    color: #fff;
+  }
+  
+  .complementary-color {
+    background-color: #573500;
+    color: #fff;
+  }
+  
+  .complementary-accent {
+    background-color: #A36C14;
+    color: #fff;
+  }
+  
+  .font-panel {
+    width: 45%;
+    display: inline-block;
+  }
+  
+  .font-label {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  .regular {
+    font-style: normal;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .cardo {
+    font-family: 'Cardo', serif;
+  }
+  
+  .oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .text-panel h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .text-panel h2 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+  }
+  
+  .text-panel p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Cardo', serif;
+  }
